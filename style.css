@@ -6,6 +6,19 @@ nav {
     background-color: #ae3e00;
 }
 
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.littletextFont {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .orangeBg {
     background-color: #ae3e00;
 }
@@ -20,6 +33,11 @@ nav {
 
 .secondOrangebd {
     border-color: #be622f;
+}
+
+.inputCustom {
+    border-color: #666666;
+    background-color: #be622f;
 }
 
 .textthemeColor {
@@ -97,19 +115,19 @@ nav {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
 
     .card2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        height: 18em;
+        min-height: 18em;
         background-color: #be622f;
     }
 
     .card2:nth-child(2) {
-        height: 23em !important;
+        min-height: 23em;
     }
 
     .cardFloat {
@@ -128,4 +146,43 @@ nav {
 
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (max-width: 576px) {
+    .floatOrder {
+        order: 1;
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    .textOrder {
+        order: 2;
+
+    }
+
+    .card2 {
+        background-color: #be622f;
+    }
+
+    .bottomInfo {
+        text-align: center;
+    }
+
+    .smallPadding {
+        padding: 1em;
+    }
+
+    .smallMargin {
+        margin-bottom: 3em;
+    }
+
+    #sneakerIcon {
+        display: none;
+    }
+
+    .mobileCenter {
+        text-align: center;
+    }
+
+    .cardoffsetBottom {
+        margin-top: 2em;
+    }
+}
