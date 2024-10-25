@@ -115,7 +115,7 @@ nav {
 }
 
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 575.01px) {
 
     .card2 {
         display: flex;
@@ -146,7 +146,7 @@ nav {
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
     .floatOrder {
         order: 1;
         text-align: center;
@@ -156,6 +156,14 @@ nav {
     .textOrder {
         order: 2;
 
+    }
+
+    .reviewcard1 {
+        order: 2;
+    }
+
+    .reviewcard2 {
+        order: 0;
     }
 
     .card2 {
@@ -185,4 +193,5 @@ nav {
     .cardoffsetBottom {
         margin-top: 2em;
     }
+
 }
