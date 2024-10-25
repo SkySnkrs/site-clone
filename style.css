@@ -1,0 +1,131 @@
+header {
+    background-color: #ae3e00
+}
+
+nav {
+    background-color: #ae3e00;
+}
+
+.orangeBg {
+    background-color: #ae3e00;
+}
+
+.orangeText {
+    color: #ae3e00
+}
+
+.secondOrange {
+    background-color: #be622f;
+}
+
+.secondOrangebd {
+    border-color: #be622f;
+}
+
+.textthemeColor {
+    color: #c4beb2
+}
+
+.backgroundImg {
+    position: relative;
+    background: url(shoeImage.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.shopbgImage {
+    min-height: 25em;
+    position: relative;
+    background: url(shopImage.jpg);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.shopbgImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.backgroundImg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#imageBackground {
+    min-height: 60dvh;
+}
+
+#imageBackground>* {
+    position: relative;
+    z-index: 2;
+}
+
+#background {
+    color: aliceblue;
+}
+
+.paragraphSpacing {
+    line-height: 1.5em;
+}
+
+.fontSize {
+    font-size: 1.5em;
+}
+
+.greyBg {
+    background-color: #666666;
+}
+
+.blackthemeText {
+    color: #212529;
+}
+
+.lightgreyBg {
+    background-color: #838181;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 18em;
+        background-color: #be622f;
+    }
+
+    .card2:nth-child(2) {
+        height: 23em !important;
+    }
+
+    .cardFloat {
+        position: relative;
+        top: 7em;
+        text-align: center;
+    }
+
+    .cardoffsetBottom {
+        margin-top: 6em;
+    }
+
+    .cardoffsetTop {
+        margin-bottom: -8em;
+    }
+
+}
+
+@media screen and (min-width: 992px) {}
